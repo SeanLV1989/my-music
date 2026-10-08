@@ -1,12 +1,8 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
-
 <head>
     <meta charset="UTF-8">
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1"
-    >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>如愿曲谱</title>
 
@@ -17,7 +13,7 @@
 
         body {
             margin: 0;
-            background: #eeeeee;
+            background: #333;
             font-family: "Microsoft YaHei", sans-serif;
         }
 
@@ -25,50 +21,67 @@
             position: sticky;
             top: 0;
             z-index: 10;
-            padding: 16px;
+            display: flex;
+            align-items: center;
+            padding: 12px;
             background: #07c160;
             color: white;
+        }
+
+        .back {
+            padding: 8px 12px;
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        .title {
+            flex: 1;
+            padding-right: 55px;
             text-align: center;
-            font-size: 22px;
+            font-size: 21px;
             font-weight: bold;
+        }
+
+        .tip {
+            padding: 8px;
+            background: #fff7d6;
+            color: #735f14;
+            text-align: center;
+            font-size: 13px;
         }
 
         .container {
             width: 100%;
             max-width: 900px;
             margin: 0 auto;
-            padding: 10px;
-        }
-
-        .page-title {
-            padding: 10px;
-            color: #666;
-            text-align: center;
-            font-size: 15px;
         }
 
         .sheet {
             display: block;
             width: 100%;
             height: auto;
-            margin-bottom: 12px;
+            margin: 0;
             background: white;
-            border-radius: 6px;
         }
 
-        .back {
-            padding: 10px 10px 30px;
+        .divider {
+            height: 8px;
+            background: #333;
+        }
+
+        .bottom {
+            padding: 25px 10px 40px;
             text-align: center;
         }
 
-        .back a {
+        .bottom a {
             display: inline-block;
-            padding: 12px 24px;
-            border-radius: 24px;
+            padding: 12px 25px;
+            border-radius: 22px;
             background: #07c160;
             color: white;
             text-decoration: none;
-            font-size: 16px;
         }
     </style>
 </head>
@@ -76,31 +89,27 @@
 <body>
 
     <div class="header">
-        如愿
+        ./index.html‹ 返回</a>
+        <div class="title">如愿</div>
+    </div>
+
+    <div class="tip">
+        向下滑动连续查看，双指可以放大
     </div>
 
     <div class="container">
 
-        <div class="page-title">
-            第 1 页
-        </div>
-
         ./如愿1.jpeg
 
-        <div class="page-title">
-            第 2 页
-        </div>
+        <div class="divider"></div>
 
         ./如愿2.jpeg
 
-        <div class="back">
-            ./index.html
-                返回曲谱库
-            </a>
+        <div class="bottom">
+            ./index.html返回曲谱库</a>
         </div>
 
     </div>
 
 </body>
-
 </html>
